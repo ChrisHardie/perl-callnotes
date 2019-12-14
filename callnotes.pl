@@ -103,7 +103,7 @@ if (-e $full_path) {
 
     open(NOTES, ">$full_path") || die "Can't create $full_path: $!\n";
 
-    print NOTES "Call notes for $description\n";
+    print NOTES "Notes for $description\n";
     print NOTES strftime('%a %b %d, %Y at %H:%M', localtime) . "\n";
     print NOTES "=" x 40;
     print NOTES "\n\n";
